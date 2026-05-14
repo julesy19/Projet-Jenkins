@@ -1,9 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
-    <title>Flask CI/CD</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projet CI/CD DevOps</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+        }
+
+        .container{
+            width:90%;
+            max-width:900px;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(12px);
+            border:1px solid rgba(255,255,255,0.1);
+            border-radius:25px;
+            padding:60px;
+            box-shadow:0 15px 40px rgba(0,0,0,0.5);
+            text-align:center;
+        }
+
+        .badge{
+            display:inline-block;
+            padding:10px 20px;
+            background:#38bdf8;
+            color:#0f172a;
+            border-radius:50px;
+            font-weight:bold;
+            margin-bottom:25px;
+            font-size:14px;
+        }
+
+        h1{
+            font-size:55px;
+            margin-bottom:20px;
+            color:#ffffff;
+        }
+
+        .highlight{
+            color:#38bdf8;
+        }
+
+        p{
+            font-size:22px;
+            line-height:1.7;
+            color:#cbd5e1;
+            margin-bottom:40px;
+        }
+
+        .tech-stack{
+            display:flex;
+            justify-content:center;
+            gap:15px;
+            flex-wrap:wrap;
+            margin-bottom:40px;
+        }
+
+        .tech{
+            background:#1e293b;
+            padding:14px 22px;
+            border-radius:12px;
+            border:1px solid rgba(255,255,255,0.08);
+            transition:0.3s;
+            font-weight:bold;
+        }
+
+        .tech:hover{
+            transform:translateY(-5px);
+            background:#38bdf8;
+            color:#0f172a;
+        }
+
+        .buttons{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .btn{
+            text-decoration:none;
+            padding:16px 32px;
+            border-radius:12px;
+            font-size:18px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn-primary{
+            background:#38bdf8;
+            color:#0f172a;
+        }
+
+        .btn-primary:hover{
+            background:#0ea5e9;
+            transform:scale(1.05);
+        }
+
+        .btn-secondary{
+            border:2px solid #38bdf8;
+            color:#38bdf8;
+        }
+
+        .btn-secondary:hover{
+            background:#38bdf8;
+            color:#0f172a;
+            transform:scale(1.05);
+        }
+
+        footer{
+            margin-top:50px;
+            color:#94a3b8;
+            font-size:15px;
+        }
+
+        @media(max-width:768px){
+
+            h1{
+                font-size:40px;
+            }
+
+            p{
+                font-size:18px;
+            }
+
+            .container{
+                padding:40px 25px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Projet Flask CI/CD avec Jenkins 🚀</h1>
+
+    <div class="container">
+
+        <div class="badge">
+            🚀 CI/CD Pipeline Automation
+        </div>
+
+        <h1>
+            Flask <span class="highlight">DevOps Project</span>
+        </h1>
+
+        <p>
+            Application Flask déployée automatiquement grâce à un pipeline
+            CI/CD utilisant Jenkins, Docker et GitHub.
+        </p>
+
+        <div class="tech-stack">
+            <div class="tech">Python</div>
+            <div class="tech">Flask</div>
+            <div class="tech">Docker</div>
+            <div class="tech">Jenkins</div>
+            <div class="tech">GitHub</div>
+        </div>
+
+        <div class="buttons">
+            <a href="#" class="btn btn-primary">
+                Voir le Projet
+            </a>
+
+            <a href="#" class="btn btn-secondary">
+                Pipeline CI/CD
+            </a>
+        </div>
+
+        <footer>
+            Projet DevOps • Déploiement Automatique • Jenkins Pipeline
+        </footer>
+
+    </div>
+
 </body>
+
 </html>
